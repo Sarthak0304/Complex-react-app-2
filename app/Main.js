@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 
 import Axios from "axios";
-Axios.defaults.baseURL = process.env.BACKENDURL;
+Axios.defaults.baseURL = process.env.REACT_APP_BACKENDURL;
 
 import Header from "./components/Header";
 import Footer from "./components/Footer";
