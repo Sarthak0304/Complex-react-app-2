@@ -3,7 +3,7 @@ import ReactDOM from "react-dom";
 import { BrowserRouter, Switch, Route } from "react-router-dom";
 
 import Axios from "axios";
-Axios.defaults.baseURL = process.env.BACKENDURL || "https://complex-react-app-sarthak2.herokuapp.com";
+Axios.defaults.baseURL = "https://complex-react-app-sarthak2.herokuapp.com";
 
 import Header from "./components/Header";
 import Footer from "./components/Footer";
