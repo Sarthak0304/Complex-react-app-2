@@ -11,7 +11,7 @@ function HomeGuest() {
     e.preventDefault();
     try {
       await Axios.post("/register", { username, email, password });
-      // appDispatch({ type: "flashMessage", value: "post created" });
+      appDispatch({ type: "flashMessage", value: "new user created" });
       console.log("succesfully submitted");
     } catch {
       console.log("error encountered");
