@@ -14,7 +14,6 @@ function CreatePost(props) {
   async function handleSubmit(e) {
     e.preventDefault();
     try {
-        console.log("in create post method");
       const response = await Axios.post("/create-post", { title, body, token: appState.user.token });
       // redirect to new post created url
       appDispatch({ type: "flashMessage", value: "post created" });
